@@ -1,0 +1,47 @@
+{
+  "name": "dsh-office",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "办公厅：只读的部门目录——本机每个插件一句话职能、对外工具、设置页入口、数据目录与记忆条数；可跨记忆库检索过往。只查不做，动手要转交给部门本身。",
+  "license": "MIT",
+  "main": "index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "libs.mjs",
+    "scan.mjs",
+    "query.mjs",
+    "cordis.patch.yml",
+    "locale",
+    "docs",
+    "examples",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.5",
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "catalog",
+    "directory",
+    "office",
+    "memory",
+    "search"
+  ],
+  "dsh": {
+    "dataDir": "office-catalog",
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

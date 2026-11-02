@@ -1,0 +1,11 @@
+# 办公厅（dsh-office）：只读的部门目录 + 跨记忆库检索。
+# 不执行任何部门的能力；扫描/检索脚本在本包内，由宿主侧插件 spawn 子进程运行。
+- insert:
+    - id: dsh-office
+      name: dsh-office
+      config:
+        # 单次扫描/检索的超时。几十个插件通常 1 秒内扫完，30s 只防死锁。
+        timeoutMs: 30000
+        # 想显式指定记忆库就取消注释（id 自取，路径按自己机器改）：
+        # memoryLibs:
+        #   - ["main", "C:\\Users\\you\\Documents\\dsh-workspace\\.dsh-meow\\memory.db"]
