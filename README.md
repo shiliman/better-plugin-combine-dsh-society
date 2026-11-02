@@ -49,7 +49,7 @@ DSH 的插件天生是"各部门各管一摊"：刷贴吧、刷 B 站、QQ 桥�
 
 ## 安装
 
-1. 把这个仓库放到任意目录（比如 `~/dsh-plugins/dsh-office`）；
+1. 把这个仓库放到任意目录（比如 `~/dsh-plugins/dsh-office-catalog`）；
 2. 在 DSH 里装本地 bundle：
 
 ```
@@ -122,7 +122,7 @@ plugin_manager  action: install_bundle  target: <上面那个目录的绝对路�
 ## 卸载
 
 ```
-plugin_manager  action: remove_bundle  target: dsh-office
+plugin_manager  action: remove_bundle  target: dsh-office-catalog
 ```
 
 `$DSH_HOME/storages/office-catalog/`（缓存、日志、`libs.json`）可以一并删掉，删了下次重扫会重建。
