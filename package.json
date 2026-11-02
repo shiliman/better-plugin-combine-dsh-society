@@ -1,16 +1,16 @@
 {
-  "name": "dsh-office-catalog",
+  "name": "better-plugin-combine-dsh-society",
   "version": "0.1.0",
   "type": "module",
   "description": "办公厅：只读的部门目录——本机每个插件一句话职能、对外工具、设置页入口、数据目录与记忆条数；可跨记忆库检索过往。只查不做，动手要转交给部门本身。",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shiliman/dsh-office-catalog.git"
+    "url": "git+https://github.com/shiliman/better-plugin-combine-dsh-society.git"
   },
-  "homepage": "https://github.com/shiliman/dsh-office-catalog#readme",
+  "homepage": "https://github.com/shiliman/better-plugin-combine-dsh-society#readme",
   "bugs": {
-    "url": "https://github.com/shiliman/dsh-office-catalog/issues"
+    "url": "https://github.com/shiliman/better-plugin-combine-dsh-society/issues"
   },
   "main": "index.js",
   "icon": "./icon.svg",
