@@ -1,0 +1,88 @@
+{
+ "generatedAt": "2026-01-01T00:00:00.000Z",
+ "scanMs": 812,
+ "host": {
+  "dshHome": "/home/you/.dsh",
+  "profile": "desktop",
+  "profileDir": "/home/you/.dsh/profiles/desktop",
+  "storages": "/home/you/.dsh/storages",
+  "node": "v22.11.0"
+ },
+ "counts": {
+  "departments": 3,
+  "skipped": 1,
+  "memoryLibs": 1,
+  "memoryLibsEmpty": 0,
+  "memoryRows": 128,
+  "tools": 4
+ },
+ "memoryLibs": [
+  {
+   "id": "main",
+   "path": "/home/you/work/.dsh-meow/memory.db",
+   "ok": true,
+   "tables": { "project": 5, "fact": 90, "lesson": 20, "topic": 3, "rules": 6, "user": 3, "soul": 1 },
+   "rows": 128
+  }
+ ],
+ "memoryProjects": [
+  { "project": "example-app", "total": 60, "tables": { "fact": 50, "lesson": 10 }, "updatedAt": "2026-01-01T00:00:00.000Z", "lib": "main" }
+ ],
+ "departments": [
+  {
+   "name": "dsh-daily-notes",
+   "version": "0.9.0",
+   "title": "每日笔记",
+   "duty": "每天整理一份笔记——摘要、归档、可选导出。",
+   "tools": ["notes_list", "notes_search", "notes_export", "notes_archive"],
+   "entries": ["设置页→每日笔记"],
+   "form": "host+client",
+   "memory": { "project": "dsh-daily-notes", "total": 12, "tables": { "project": 3, "fact": 7, "lesson": 2 }, "updatedAt": "2026-01-01T00:00:00.000Z" },
+   "data": {
+    "path": "/home/you/.dsh/notes-duty",
+    "bytes": 2457600,
+    "last": { "file": "reports/2026-01-01.md", "mtime": "2026-01-01T00:00:00.000Z", "bytes": 4096 },
+    "logs": ["run.log"]
+   },
+   "dir": "/home/you/.dsh/profiles/desktop/node_modules/dsh-daily-notes",
+   "boundary": "只读目录卡；要动手请转交给该部门自己的会话/工具",
+   "engineGap": null
+  },
+  {
+   "name": "dsh-switchboard",
+   "version": "0.3.2",
+   "title": "开关板",
+   "duty": "一个设置页，管所有按需能力的总闸与分项开关。",
+   "tools": ["switchboard_set"],
+   "entries": ["设置页→开关板"],
+   "form": "host+client",
+   "memory": null,
+   "data": {
+    "path": "/home/you/.dsh/storages/switchboard",
+    "bytes": 2048,
+    "last": { "file": "state.json", "mtime": "2026-01-01T00:00:00.000Z", "bytes": 512 },
+    "logs": []
+   },
+   "dir": "/home/you/.dsh/profiles/desktop/node_modules/dsh-switchboard",
+   "boundary": "只读目录卡；要动手请转交给该部门自己的会话/工具",
+   "engineGap": null
+  },
+  {
+   "name": "@scope/plain-ui",
+   "version": "0.1.0",
+   "title": "纯界面小部件",
+   "duty": "只在右侧栏渲染一个面板，没有对外工具。",
+   "tools": [],
+   "entries": ["设置页"],
+   "form": "host+client",
+   "memory": null,
+   "data": null,
+   "dir": "/home/you/.dsh/profiles/desktop/node_modules/@scope/plain-ui",
+   "boundary": "只读目录卡；要动手请转交给该部门自己的会话/工具",
+   "engineGap": ">=0.2.0-rc.2"
+  }
+ ],
+ "skipped": [
+  { "dir": "axios", "reason": "not a dsh plugin" }
+ ]
+}
